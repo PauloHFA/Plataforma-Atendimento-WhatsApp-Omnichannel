@@ -233,26 +233,26 @@ whatsapp-atendimento/
 
 - [x] T013 [US2] [Plan:4.1] Implementar consulta simulada de pedidos com validação prévia em `src/integrations/orders.py` e `tests/unit/test_order_status.py`.
 - [x] T014 [US2] [Plan:4.2] Implementar disponibilidade, criação, consulta e cancelamento de agendamentos em `src/integrations/appointments.py` e `tests/integration/test_appointments.py`.
-- [ ] T015 [US2] [Plan:4.3] Implementar registro de opt-in/opt-out e bloqueio das palavras PARAR, SAIR e CANCELAR em `src/consent/` e `tests/unit/test_consent.py`.
-- [ ] T016 [US2] [Plan:4.3] Implementar janela de 24 h, templates permitidos e contagem por categoria em `src/flows/` e `src/channel/`, com testes em `tests/unit/test_message_window.py`.
-- [ ] T017 [US2] [Plan:4.3] Criar diálogos para pedido válido/inválido, conflito de agenda, opt-out e template fora da janela em `tests/dialogs/`.
+- [x] T015 [US2] [Plan:4.3] Implementar registro de opt-in/opt-out e bloqueio das palavras PARAR, SAIR e CANCELAR em `src/consent/` e `tests/unit/test_consent.py`.
+- [x] T016 [US2] [Plan:4.3] Implementar janela de 24 h, templates permitidos e contagem por categoria em `src/flows/` e `src/channel/`, com testes em `tests/unit/test_message_window.py`.
+- [x] T017 [US2] [Plan:4.3] Criar diálogos para pedido válido/inválido, conflito de agenda, opt-out e template fora da janela em `tests/dialogs/`.
 
 ### Fase 5 — US3: Handoff humano
 
-- [ ] T018 [US3] [Plan:5.1] Criar tickets com resumo, fila e estado de silêncio do bot em `src/handoff/` e `tests/integration/test_handoff.py`.
-- [ ] T019 [US3] [Plan:5.1] Integrar Chatwoot e as rotas de listagem/resposta/devolução em `src/handoff/chatwoot.py`, `src/api/conversations.py` e `tests/contract/test_chatwoot.py`.
+- [x] T018 [US3] [Plan:5.1] Criar tickets com resumo, fila e estado de silêncio do bot em `src/handoff/` e `tests/integration/test_handoff.py`.
+- [x] T019 [US3] [Plan:5.1] Integrar Chatwoot e as rotas de listagem/resposta/devolução em `src/handoff/chatwoot.py`, `src/api/conversations.py` e `tests/contract/test_chatwoot.py`.
 
 ### Fase 6 — US4: IA restrita (fase posterior ao MVP)
 
-- [ ] T020 [US4] [Plan:6.1] Implementar classificador de intenção atrás de configuração/feature flag em `src/nlu/` e `tests/unit/test_intent_classifier.py`.
-- [ ] T021 [US4] [Plan:6.1] Implementar RAG sobre a base de conhecimento, validação de saída, recusa fora do escopo e fallback para humano em `src/knowledge/` e `src/nlu/`.
-- [ ] T022 [US4] [Plan:6.1] Adicionar testes contra prompt injection, conteúdo sem fonte e baixa confiança em `tests/dialogs/test_ai_guardrails.py`; comparar métricas com a linha de base.
+- [x] T020 [US4] [Plan:6.1] Implementar classificador de intenção atrás de configuração/feature flag em `src/nlu/` e `tests/unit/test_intent_classifier.py`.
+- [x] T021 [US4] [Plan:6.1] Implementar RAG sobre a base de conhecimento, validação de saída, recusa fora do escopo e fallback para humano em `src/knowledge/` e `src/nlu/`.
+- [x] T022 [US4] [Plan:6.1] Adicionar testes contra prompt injection, conteúdo sem fonte e baixa confiança em `tests/dialogs/test_ai_guardrails.py`; comparar métricas com a linha de base.
 
 ### Fase 7 — Transversal e conclusão
 
-- [ ] T023 [Plan:7.1] Implementar `/health`, `/metrics`, pesquisa de satisfação, exportação anonimizada e medições de latência/handoff/consumo em `src/api/metrics.py`, `src/flows/` e `tests/integration/test_metrics.py`.
-- [ ] T024 [Plan:7.1] Implementar mascaramento de telefone, retenção e exclusão sob demanda em `src/` e `tests/unit/test_privacy.py`; documentar a política em `docs/`.
-- [ ] T025 [Plan:7.1] Implementar monitoramento de qualidade e pausa de envios ativos em `src/` e `tests/unit/test_quality_controls.py`.
+- [x] T023 [Plan:7.1] Implementar `/health`, `/metrics`, pesquisa de satisfação, exportação anonimizada e medições de latência/handoff/consumo em `src/api/metrics.py`, `src/flows/` e `tests/integration/test_metrics.py`.
+- [x] T024 [Plan:7.1] Implementar mascaramento de telefone, retenção e exclusão sob demanda em `src/` e `tests/unit/test_privacy.py`; documentar a política em `docs/`.
+- [x] T025 [Plan:7.1] Implementar monitoramento de qualidade e pausa de envios ativos em `src/` e `tests/unit/test_quality_controls.py`.
 - [ ] T026 [Plan:7.2] Completar testes unitários, contrato e integração com fixtures isoladas em `tests/conftest.py`; demonstrar ≥80% de cobertura da lógica de fluxo.
 - [ ] T027 [Plan:7.2] Executar teste de 50 conversas simultâneas e validar p95 de ACK/resposta em `tests/integration/` ou script de carga documentado.
 - [ ] T028 [Plan:7.2] Executar checklist de sandbox Meta com número de teste e registrar evidências anonimizadas em `docs/sandbox-checklist.md`.
