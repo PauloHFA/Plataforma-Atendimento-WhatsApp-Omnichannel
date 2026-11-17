@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "atendimento-zap"
 version = "0.1.0"
-description = "Automacao de atendimento via WhatsApp"
+description = "Plataforma de automacao de atendimento via WhatsApp Cloud API com filas assincronas Celery/Redis, RAG seguro, handoff humano Chatwoot e conformidade LGPD"
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
 dependencies = [
